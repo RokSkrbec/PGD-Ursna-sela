@@ -40,11 +40,11 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 0.3s ease-in;
 }
 .nav-active {
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 .nav-links li {
   list-style: none;
