@@ -16,6 +16,7 @@ body {
 .main-nav {
   position: fixed;
   top: 0;
+  height: 150px;
   width: 100%;
   color: #ffffff;
   display: flex;
@@ -71,7 +72,7 @@ body {
   position: absolute;
   bottom: 5px;
   left: 45%;
-  font-size: 5rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 .action-arrow a {
@@ -90,6 +91,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#welcome-anchor {
+  padding-top: 154px;
+  margin-top: -154px;
 }
 section h1 {
   font-weight: normal;
