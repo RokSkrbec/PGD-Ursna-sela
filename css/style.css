@@ -16,12 +16,12 @@ body {
 .main-nav {
   position: fixed;
   top: 0;
-  height: 150px;
+  height: 100px;
   width: 100%;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-  padding: 5% 5% 0 5%;
+  padding: 10px 10px;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -29,7 +29,7 @@ body {
   display: flex;
 }
 .main-logo img {
-  height: 75px;
+  height: 80px;
 }
 .nav-links {
   position: absolute;
@@ -93,8 +93,8 @@ body {
   align-items: center;
 }
 #welcome-anchor {
-  padding-top: 154px;
-  margin-top: -154px;
+  padding-top: 104px;
+  margin-top: -104px;
 }
 section h1 {
   font-weight: normal;
