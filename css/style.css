@@ -42,19 +42,22 @@ body {
   width: 100%;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in;
+  font-size: 2rem;
 }
 .nav-active {
   transform: translateY(0%);
 }
 .nav-links li {
   list-style: none;
+  cursor: pointer;
 }
 .mobile-menu {
-  height: 2.5rem;
+  height: 3.4rem;
   padding: 4px 20px 4px 20px;
   border: 1px solid #ffffff;
   cursor: pointer;
   z-index: 10;
+  font-size: 1.5rem;
 }
 
 .start-page-image img {
@@ -67,7 +70,7 @@ body {
   position: absolute;
   bottom: 5px;
   left: 45%;
-  font-size: 2rem;
+  font-size: 5rem;
   cursor: pointer;
 }
 .action-arrow a {

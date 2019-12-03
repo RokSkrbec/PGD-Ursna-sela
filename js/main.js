@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
     if (window.scrollY >= this.window.innerHeight - nav.clientHeight) {
       // Just an example
-      nav.style.backgroundColor = "#696969"; // or default color
+      nav.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; // or default color
     } else {
       nav.style.backgroundColor = "transparent";
     }
