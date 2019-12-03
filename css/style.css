@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eeeeee;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5% 0 5%;
+}
+
+.main-logo {
+  display: flex;
+}
+.main-logo img {
+  height: 50px;
+}
+.nav-links {
+  display: none;
+}
+.mobile-menu {
+  height: 2.5rem;
+  padding: 4px 20px 4px 20px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.start-page-image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.action-arrow {
+  position: absolute;
+  bottom: 5px;
+  left: 45%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.action-arrow a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.welcome,
+.notifications,
+.news,
+.vehicles,
+.calendar {
+  /*background-color: silver;*/
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h1 {
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
+.notifications h1 {
+  font-weight: bold;
+}
+section h2 {
+  font-size: 1.4rem;
+}
+
+section p {
+  margin-bottom: 1vh;
+}
+
+.news .news-wrapper .news-image img {
+  width: 100%;
+}
+.news .news-wrapper .news-date {
+  font-size: 0.9rem;
+}
+.news .news-wrapper .news-button {
+  width: 100%;
+  height: 2vh;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  text-align: center;
+  line-height: 2vh;
+  cursor: pointer;
+  margin-bottom: 2vh;
+}
+
+.vehicles .vehicle-wrapper .vehicle-image img {
+  width: 100%;
+}
+
+.calendar .calendar-wrapper img {
+  width: 100%;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: 100px;
+  background-color: #071827;
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffffff;
+  align-items: center;
+}
