@@ -103,6 +103,12 @@ section h1 {
   margin-bottom: 0.5vh;
 }
 
+.welcome p,
+.notifications p,
+.vehicles p {
+  margin-bottom: 4vh;
+}
+
 /*positions anchor links below nav bar*/
 .anchor a {
   position: absolute;
@@ -138,7 +144,7 @@ section p {
   font-size: 2rem;
   line-height: 4vh;
   cursor: pointer;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 }
 .news .news-wrapper .news-button:hover {
   background-color: #dadada;
