@@ -24,5 +24,10 @@ window.addEventListener("load", () => {
   });
   navLinks.addEventListener("click", () => {
     navLinks.classList.toggle("nav-active");
+    if (mobileMenu.innerHTML === "meni") {
+      mobileMenu.innerHTML = '<i class="fas fa-times"></i>';
+    } else {
+      mobileMenu.innerHTML = "meni";
+    }
   });
 });
