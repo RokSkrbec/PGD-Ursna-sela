@@ -1,17 +1,19 @@
 window.addEventListener("load", () => {
-  const nav = document.querySelector(".main-nav"); // Identify target
+  const mainNav = document.querySelector(".main-nav");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const navLinks = document.querySelector(".nav-links");
+
   window.addEventListener("scroll", function(event) {
     // To listen for event
     event.preventDefault();
-    if (window.scrollY >= this.window.innerHeight - nav.clientHeight) {
+    if (window.scrollY >= this.window.innerHeight - mainNav.clientHeight) {
       // Just an example
-      nav.style.backgroundColor = "rgba(1, 1, 1, 1)"; // or default color
+      mainNav.style.backgroundColor = "rgba(1, 1, 1, 1)"; // or default color
     } else {
-      nav.style.backgroundColor = "transparent";
+      mainNav.style.backgroundColor = "transparent";
     }
   });
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const navLinks = document.querySelector(".nav-links");
+
   mobileMenu.addEventListener("click", () => {
     navLinks.classList.toggle("nav-active");
     if (mobileMenu.innerHTML === "meni") {
@@ -19,5 +21,8 @@ window.addEventListener("load", () => {
     } else {
       mobileMenu.innerHTML = "meni";
     }
+  });
+  navLinks.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-active");
   });
 });

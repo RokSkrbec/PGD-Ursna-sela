@@ -32,7 +32,7 @@ body {
 .nav-links {
   position: absolute;
   right: 0px;
-  height: 50vh;
+  height: 100vh;
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -51,6 +51,11 @@ body {
 .nav-links li {
   list-style: none;
   cursor: pointer;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .mobile-menu {
   height: 3.4rem;
@@ -91,32 +96,41 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#welcome-anchor {
-  padding-top: 104px;
-  margin-top: -104px;
-}
 section h1 {
   font-weight: normal;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-top: 2vh;
   margin-bottom: 0.5vh;
 }
+
+/*positions anchor links below nav bar*/
+.anchor a {
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+.anchor {
+  position: relative;
+}
+
 .notifications h1 {
   font-weight: bold;
 }
 section h2 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 section p {
   margin-bottom: 1vh;
+  font-size: 1.5rem;
 }
 
 .news .news-wrapper .news-image img {
   width: 100%;
 }
 .news .news-wrapper .news-date {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 .news .news-wrapper .news-button {
   width: 100%;
