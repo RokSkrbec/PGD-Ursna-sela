@@ -25,18 +25,18 @@ body {
   justify-content: space-between;
   padding: 10px 10px;
   font-family: "Titillium Web", sans-serif;
-  background-color: rgba(0, 0, 0, 0);
+  /*background-color: rgba(0, 0, 0, 0);*/
   align-items: center;
 }
 .main-logo img {
-  height: 80px;
+  height: 70px;
 }
 .nav-links {
   position: absolute;
   right: 0px;
   height: 100vh;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #403f4cef;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +66,7 @@ body {
   cursor: pointer;
   z-index: 10;
   font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 .start-page-image img {
@@ -84,6 +85,15 @@ body {
 .action-arrow a {
   color: #ffffff;
   text-decoration: none;
+}
+.rotating-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+
+  font-size: 5rem;
 }
 
 .welcome,
@@ -141,17 +151,18 @@ section p {
 .news .news-wrapper .news-button {
   width: 100%;
   height: 4vh;
-  /*background-color: #c33636;*/
-  border: 1px solid #cccccc;
+  border: 1px solid #403f4c;
   text-align: center;
   font-size: 2rem;
   line-height: 4vh;
   cursor: pointer;
   margin-bottom: 4vh;
-  color: #c33636;
+  color: #fff;
+  background-color: #403f4c;
 }
 .news .news-wrapper .news-button:hover {
-  background-color: #dadada;
+  background-color: #eeeeee;
+  color: #c33636;
 }
 
 .vehicles .vehicle-wrapper .vehicle-image img {
@@ -170,4 +181,19 @@ section p {
   justify-content: space-evenly;
   color: #ffffff;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    position: relative;
+    transform: translateY(0%);
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .mobile-menu {
+    display: none;
+  }
 }
